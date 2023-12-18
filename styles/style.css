@@ -40,7 +40,7 @@
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 10px;
-  inset-inline-start: 0;
+  inset-inline-start: 10px;
 }
 
 .decorated-zone::after {
@@ -51,16 +51,18 @@
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 10px;
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
 }
 
 @media (width >= 768px) {
   .decorated-zone::before {
     inset-block-end: 20px;
+    inset-inline-start: 20px;
   }
 
   .decorated-zone::after {
     inset-block-start: 20px;
+    inset-inline-end: 20px;
   }
 }
 
@@ -82,7 +84,7 @@
   font-size: 18px;
   line-height: 25px;
   inset-block-start: 10px;
-  inset-inline-end: 29px;
+  inset-inline-end: 39px;
 }
 
 .header__rec::after {
@@ -94,7 +96,7 @@
   inline-size: 9px;
   block-size: 9px;
   inset-block-start: 18px;
-  inset-inline-end: 10px;
+  inset-inline-end: 20px;
 }
 
 @media (width >= 768px) {
@@ -104,10 +106,12 @@
 
   .header__rec::before {
     inset-block-start: 20px;
+    inset-inline-end: 49px;
   }
 
   .header__rec::after {
     inset-block-start: 28px;
+    inset-inline-end: 30px;
   }
 }
 
@@ -222,6 +226,12 @@
 
 main {
   padding: 0 10px;
+}
+
+@media (width >= 768px) {
+  main {
+    padding: 0 20px;
+  }
 }
 
 /* ====================== ОСНОВНОЙ БЛОК ======================== */
@@ -413,7 +423,7 @@ main {
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 10px;
-  inset-inline-start: 0;
+  inset-inline-start: 10px;
 }
 
 .footer.decorated-zone::after {
@@ -424,7 +434,7 @@ main {
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 10px;
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
 }
 
 .footer__title {
@@ -442,10 +452,12 @@ main {
 
   .footer.decorated-zone::before {
     inset-block-end: 20px;
+    inset-inline-start: 20px;
   }
 
   .footer.decorated-zone::after {
     inset-block-start: 20px;
+    inset-inline-end: 20px;
   }
 
   .footer__title {
