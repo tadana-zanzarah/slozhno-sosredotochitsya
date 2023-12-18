@@ -12,7 +12,6 @@
   background-size: cover;
   background-attachment: fixed;
   inline-size: 100vw;
-  block-size: 100vh;
 }
 
 .header {
@@ -23,24 +22,17 @@
   margin-block-end: 40px;
   padding: 10px 0;
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 100vh;
 }
 
 @media (width >= 768px) {
   .page {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .header {
-    margin-block-end: calc(20px + 60px); /*20px - padding внутри margin*/
-    padding: 0;
-  }
-}
-
-@media (width >= 1024px) {
-  .header {
-    margin-block-end: 80px;
-    padding: 0;
+    margin-block-end: 60px;
+    padding: 20px 0;
   }
 }
 
@@ -70,11 +62,11 @@
 
 @media (width >= 768px) {
   .decorated-zone::before {
-    inset-block-end: 0;
+    inset-block-end: 20px;
   }
 
   .decorated-zone::after {
-    inset-block-start: 0;
+    inset-block-start: 20px;
   }
 }
 
@@ -161,9 +153,6 @@
   }
 }
 
-.header__theme-menu-item {
-}
-
 .header__theme-menu-button {
   border: none;
   padding: 0 13px;
@@ -182,9 +171,6 @@
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--button-color, #ff0070);
-}
-
-.header__theme-menu-button_type_auto {
 }
 
 .header__theme-menu-button_active {
@@ -241,9 +227,6 @@
 }
 
 /* ====================== ОСНОВНОЙ БЛОК ======================== */
-
-.content {
-}
 
 .content-block {
   display: grid;
@@ -339,7 +322,7 @@
 }
 
 .link:hover {
-  border-block-end: solid var(--text-color, #F1B2CE);
+  border-block-end: solid var(--text-color, #f1b2ce);
 }
 
 .link:focus {
@@ -348,13 +331,10 @@
 }
 
 .link:focus-visible {
-  outline: 1px solid var(--text-color, #F1B2CE);
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 /* ========================== ГАЛЕРЕЯ ====================== */
-
-.gallery {
-}
 
 .gallery .content-subtitle {
   margin-block-end: 10px;
